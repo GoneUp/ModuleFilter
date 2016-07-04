@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Silkroad.Framework.Common.Objects
 {
-    public class CertifiactionManager
+    public class CertificationManager
     {
         public string RequestName { get; set; }
         public string RequestIP { get; set; }
@@ -25,7 +25,7 @@ namespace Silkroad.Framework.Common.Objects
         public Dictionary<uint, SecurityDescription> SecurityDescriptions { get; private set; }
         public List<SecurityDescriptionGroupAssign> SecurityDescriptionGroupAssigns { get; private set; }
 
-        public CertifiactionManager()
+        public CertificationManager()
         {
             ServiceTypes = new Dictionary<byte, srServiceType>();
             OperationTypes = new Dictionary<byte, srOperationType>();
@@ -99,7 +99,7 @@ namespace Silkroad.Framework.Common.Objects
                 else
                 {
                     //TODO: Proper exception
-                    StaticLogger.Instance.Error($"{nameof(CertifiactionManager)}->{Caller.GetMemberName()}: entry missmatch!");
+                    StaticLogger.Instance.Error($"{nameof(CertificationManager)}->{Caller.GetMemberName()}: entry missmatch!");
                     break;
                 }
             }
@@ -124,7 +124,7 @@ namespace Silkroad.Framework.Common.Objects
                 else
                 {
                     //TODO: Proper exception
-                    StaticLogger.Instance.Error($"{nameof(CertifiactionManager)}->{Caller.GetMemberName()}: entry missmatch!");
+                    StaticLogger.Instance.Error($"{nameof(CertificationManager)}->{Caller.GetMemberName()}: entry missmatch!");
                     break;
                 }
             }

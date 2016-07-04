@@ -53,7 +53,7 @@
     <Compile Include="Config\ServiceCertificator.cs" />
     <Compile Include="Config\ServiceRedirect.cs" />
     <Compile Include="Config\ServiceSecurity.cs" />
-    <Compile Include="Objects\CertifiactionManager.cs" />
+    <Compile Include="Objects\CertificationManager.cs" />
     <Compile Include="Objects\IKeyStructure.cs" />
     <Compile Include="Objects\SecurityDesc\srSecurityDescriptionGroupAssign.cs" />
     <Compile Include="Objects\Certification\srGlobalOperation.cs" />

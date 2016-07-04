@@ -14,7 +14,7 @@ namespace Silkroad.Framework.Common.Plugin
 
         public Service Service { get; protected set; }
 
-        public CertifiactionManager CertificationManager { get; protected set; }
+        public CertificationManager CertificationManager { get; protected set; }
 
         public IPluginControl Control { get; protected set; }
 
@@ -27,7 +27,7 @@ namespace Silkroad.Framework.Common.Plugin
             this.Name = name;
             this.Service = service;
 
-            this.CertificationManager = new CertifiactionManager();
+            this.CertificationManager = new CertificationManager();
             this.Service.PacketManager.AddModuleHandler(0x6003, CertificationReq);
             this.Service.PacketManager.AddCertificatorHandler(0xA003, CertificationAck);
             //Add packet handlers used in all plugins here...
